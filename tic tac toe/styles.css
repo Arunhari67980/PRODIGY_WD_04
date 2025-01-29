@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, black, black);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 36px;
+    color: #2c3e50;
+}
+
+.mode-selection button,
+#resetBtn {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    transition: background 0.3s;
+}
+
+.mode-selection button:hover,
+#resetBtn:hover {
+    background: #2980b9;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: red;
+    border: 2px solid #2c3e50;
+    font-size: 36px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.cell:hover {
+    background: yellow;
+}
+
+.message {
+    font-size: 24px;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+.winner {
+    background: #2ecc71 !important;
+}
